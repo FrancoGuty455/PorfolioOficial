@@ -1,10 +1,11 @@
 {
-  "about": {
-    "p1": "My name is Franco Gutiérrez. I have been working as a <strong>freelance developer for over 3 years</strong>, collaborating with companies and clients from around the world.",
-    "p2": "I specialize in developing <strong>web, mobile, and desktop applications</strong>. I enjoy working with modern technologies and creating solutions that truly help people solve real problems.",
-    "p3": "Some of my most notable projects include <strong>developing a medical management platform used in clinics in Argentina</strong>, and a desktop stock control app used by small businesses.",
-    "p4": "I have also actively participated in tech communities and programming events, including <strong>talks at meetups and regional hackathons</strong>. I firmly believe in the power of knowledge sharing to grow as an industry."
-  },
+"about": {
+  "p1": "My name is Franco Gutiérrez. I am a <strong>highly experienced freelance software developer</strong> with over 3 years of hands-on experience working with clients and companies from all around the world.",
+  "p2": "I specialize in building <strong>modern web, mobile, and desktop applications</strong> using up-to-date technologies. I’m passionate about creating efficient, scalable, and user-focused digital solutions.",
+  "p3": "Throughout my freelance career, I’ve successfully developed <strong>custom sales systems, corporate websites, and cross-platform web applications</strong> for small and medium-sized businesses across different industries.",
+  "p4": "In addition to project work, I actively engage in tech communities and programming events, including <strong>meetup talks and regional hackathons</strong>. I strongly believe in the value of sharing knowledge to help grow our industry."
+}
+,
 
   "hero": {
     "title": "Hi, I'm Franco",
@@ -13,15 +14,23 @@
     "contact": "Contact me",
     "linkedin": "LinkedIn"
   },
-  "experience": [
-    {
-      "date": "Since 2022",
-      "title": "Freelance Developer",
-      "company": "Self-employed",
-      "description": "Custom solutions for small businesses and entrepreneurs. Built sales systems, custom web apps, corporate sites, and cross-platform mobile apps. Focused on performance, usability, and scalability.",
-      "link": ""
-    }
-  ]
+"experience": [
+  {
+    "date": "Since Jul. 2023",
+    "title": "Software Developer",
+    "company": "Social Meeting - SOME | eSocial Brasil Editora",
+    "description": "Freelance work for the Social Meeting team, developing web and front-end solutions using React.js, AngularJS, and Node.js. Participated in social impact projects and digital tools for organizations in Brazil.",
+    "link": "https://www.socialmeeting.info"
+  },
+  {
+    "date": "Since 2022",
+    "title": "Freelance Developer",
+    "company": "Self-employed",
+    "description": "Custom solutions for small businesses and entrepreneurs. Built sales systems, custom web apps, corporate sites, and cross-platform mobile apps. Focused on performance, usability, and scalability.",
+    "link": ""
+  }
+]
+
 ,
   "projects": [
     {

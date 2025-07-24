@@ -1,10 +1,11 @@
 {
-  "about": {
-    "p1": "Me chamo Franco Gutiérrez. Trabalho há mais de <strong>3 anos como desenvolvedor freelance</strong>, colaborando com empresas e clientes de várias partes do mundo.",
-    "p2": "Sou especializado no desenvolvimento de <strong>aplicações web, móveis e desktop</strong>. Gosto de trabalhar com tecnologias modernas e criar soluções que realmente ajudem as pessoas a resolver problemas concretos.",
-    "p3": "Alguns dos meus projetos mais importantes incluem <strong>o desenvolvimento de uma plataforma de gestão médica usada em clínicas da Argentina</strong> e um app desktop para controle de estoque usado por pequenos comércios.",
-    "p4": "Além disso, participei ativamente de comunidades técnicas e eventos de programação, incluindo <strong>palestras em meetups e hackathons regionais</strong>. Acredito firmemente no poder de compartilhar conhecimento para crescer como indústria."
-  },
+"about": {
+  "p1": "Meu nome é Franco Gutiérrez. Sou um <strong>desenvolvedor de software freelance altamente experiente</strong> com mais de 3 anos de atuação junto a empresas e clientes de diferentes partes do mundo.",
+  "p2": "Sou especializado no desenvolvimento de <strong>aplicativos modernos para web, mobile e desktop</strong>, utilizando tecnologias atualizadas. Tenho paixão por criar soluções digitais eficientes, escaláveis e centradas no usuário.",
+  "p3": "Durante minha carreira como freelancer, desenvolvi com sucesso <strong>sistemas de vendas personalizados, sites corporativos e aplicações web multiplataforma</strong> para pequenas e médias empresas.",
+  "p4": "Além dos projetos, participo ativamente de comunidades de tecnologia e eventos de programação, incluindo <strong>palestras em meetups e hackathons regionais</strong>. Acredito fortemente no poder do compartilhamento de conhecimento para fortalecer o setor."
+}
+,
 
   "hero": {
     "title": "Olá, sou o Franco",
@@ -13,15 +14,23 @@
     "contact": "Contate-me",
     "linkedin": "LinkedIn"
   },
-  "experience": [
-    {
-      "date": "Desde 2022",
-      "title": "Desenvolvedor Freelancer",
-      "company": "Autônomo",
-      "description": "Soluções sob medida para pequenas empresas e empreendedores. Desenvolvi sistemas de vendas, aplicativos web personalizados, sites corporativos e apps móveis multiplataforma. Foco em desempenho, usabilidade e escalabilidade.",
-      "link": ""
-    }
-  ],
+"experience": [
+  {
+    "date": "Desde jul. de 2023",
+    "title": "Desenvolvedor de Software",
+    "company": "Social Meeting - SOME | eSocial Brasil Editora",
+    "description": "Trabalho freelance para a equipe da Social Meeting, desenvolvendo soluções web e front-end com React.js, AngularJS e Node.js. Participação em projetos de impacto social e ferramentas digitais para organizações no Brasil.",
+    "link": "https://www.socialmeeting.info"
+  },
+  {
+    "date": "Desde 2022",
+    "title": "Desenvolvedor Freelancer",
+    "company": "Autônomo",
+    "description": "Desenvolvimento de soluções sob medida para pequenas empresas e empreendedores. Criação de sistemas de vendas, aplicativos web personalizados, sites corporativos e aplicativos móveis multiplataforma. Foco em desempenho, usabilidade e escalabilidade.",
+    "link": ""
+  }
+]
+,
 
   "projects": [
     {
