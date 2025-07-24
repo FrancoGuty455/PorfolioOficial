@@ -1,0 +1,38 @@
+{
+  "about": {
+    "p1": "Me chamo Franco Gutiérrez. Trabalho há mais de <strong>3 anos como desenvolvedor freelance</strong>, colaborando com empresas e clientes de várias partes do mundo.",
+    "p2": "Sou especializado no desenvolvimento de <strong>aplicações web, móveis e desktop</strong>. Gosto de trabalhar com tecnologias modernas e criar soluções que realmente ajudem as pessoas a resolver problemas concretos.",
+    "p3": "Alguns dos meus projetos mais importantes incluem <strong>o desenvolvimento de uma plataforma de gestão médica usada em clínicas da Argentina</strong> e um app desktop para controle de estoque usado por pequenos comércios.",
+    "p4": "Além disso, participei ativamente de comunidades técnicas e eventos de programação, incluindo <strong>palestras em meetups e hackathons regionais</strong>. Acredito firmemente no poder de compartilhar conhecimento para crescer como indústria."
+  },
+
+  "hero": {
+    "title": "Olá, sou o Franco",
+    "description": "+3 anos de experiência. <strong>Desenvolvedor de Software</strong> da Argentina. Especializado em criar aplicações únicas.",
+    "badge": "Disponível para trabalhar",
+    "contact": "Contate-me",
+    "linkedin": "LinkedIn"
+  },
+  "experience": [
+    {
+      "date": "Desde 2022",
+      "title": "Desenvolvedor Freelancer",
+      "company": "Autônomo",
+      "description": "Soluções sob medida para pequenas empresas e empreendedores. Desenvolvi sistemas de vendas, aplicativos web personalizados, sites corporativos e apps móveis multiplataforma. Foco em desempenho, usabilidade e escalabilidade.",
+      "link": ""
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Site oficial da Some Social Meeting",
+      "description": "Landing page em português desenvolvida com React e Next.js para a empresa Some Social Meeting. Design responsivo, tempos de carregamento otimizados e SEO básico implementado."
+    },
+    {
+      "title": "Sistema de vendas com Python e Tkinter",
+      "description": "Aplicativo desktop para gerenciar vendas, estoque e relatórios em pequenos negócios. Interface desenvolvida com Tkinter, persistência de dados com SQLite. Projeto funcional e adaptável a diversos setores."
+    }
+  ]
+}
+
+

@@ -1,34 +1,19 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro"
 
-const navItems = [
-  {
-    title: "Experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
-  },
-  {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
-  },
-  {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
-  },
-  {
-  title: "Servicios",
-  label: "servicios",
-  url: "/servicios",
-},
+// Detectar idioma
+let lang = "en"
+if (Astro.url.pathname.startsWith("/es")) lang = "es"
+if (Astro.url.pathname.startsWith("/pt")) lang = "pt"
 
-  
-  {
-    title: "Contacto",
-    label: "contacto",
-    url: "mailto:yo.franco654@gmail.com",
-  },
+const textos = await import(`./textos/${lang}.ts`).then(m => m.default)
+
+const navItems = [
+  { title: textos.nav.experiencia, label: "experiencia", url: `/${lang}#experiencia` },
+  { title: textos.nav.proyectos, label: "proyectos", url: `/${lang}#proyectos` },
+  { title: textos.nav.sobreMi, label: "sobre-mi", url: `/${lang}#sobre-mi` },
+  { title: textos.nav.servicios, label: "servicios", url: `/${lang}/servicios` },
+  { title: textos.nav.contacto, label: "contacto", url: "mailto:yo.franco654@gmail.com" },
 ]
 ---
 

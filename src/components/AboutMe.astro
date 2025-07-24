@@ -1,36 +1,32 @@
 ---
-const personalImageAlt = "Franco Gutiérrez"
+import es from '../i18n/es.json';
+import en from '../i18n/en.json';
+import pt from '../i18n/pt.json';
+
+const langs = { es, en, pt };
+type Lang = keyof typeof langs;
+
+const langParam = Astro.url.pathname.split('/')[1];
+const lang: Lang = (['es', 'en', 'pt'].includes(langParam) ? langParam : 'es') as Lang;
+const t = langs[lang];
+
+const personalImageAlt = "Franco Gutiérrez";
 ---
 
 <article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
-  >
-    <p>
-      Me llamo Franco Gutiérrez. Llevo más de <strong>3 años trabajando como
-      desarrollador freelance</strong>, colaborando con empresas y clientes de distintas partes del mundo.
-    </p>
-
-    <p>
-      Estoy especializado en el desarrollo de <strong>aplicaciones web, móviles
-      y de escritorio</strong>. Me gusta trabajar con tecnologías modernas y crear
-      soluciones que realmente ayuden a las personas a resolver problemas concretos.
-    </p>
-
-    <p>
-      Algunos de mis proyectos más destacados incluyen <strong>el desarrollo de
-      una plataforma de gestión médica usada en clínicas de Argentina</strong>, y
-      una app de escritorio para control de stock utilizada por pequeños
-      comercios. 
-    </p>
-
-    <p>
-      Además, he participado activamente en comunidades técnicas y eventos de programación,
-      incluyendo <strong>charlas en meetups y hackatones regionales</strong>. Creo
-      firmemente en el poder de compartir conocimiento para crecer como
-      industria.
-    </p>
+  <div class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
+    <p set:html={t.about.p1}></p>
+    <p set:html={t.about.p2}></p>
+    <p set:html={t.about.p3}></p>
+    <p set:html={t.about.p4}></p>
   </div>
 
-  <img width="200" height="200" src="/me.png" alt={personalImageAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20" style="object-position: 50% 50%">
+  <img
+    width="200"
+    height="200"
+    src="/me.png"
+    alt={personalImageAlt}
+    class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    style="object-position: 50% 50%"
+  />
 </article>

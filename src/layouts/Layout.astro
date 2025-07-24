@@ -1,17 +1,22 @@
 ---
-import "@fontsource-variable/onest"
-
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import { ViewTransitions } from "astro:transitions"
+import "@fontsource-variable/onest";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
 
-const { description, title } = Astro.props
+const { description, title } = Astro.props;
+
+// 🟡 DETECTAR idioma y cargar traducción
+const lang = Astro.url.pathname.split("/")[1] || "en";
+const textos = await import(`../components/textos/${lang}.ts`).then((m) => m.default);
 ---
+
 
 <!doctype html>
 <html lang="es">
@@ -32,9 +37,9 @@ const { description, title } = Astro.props
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
-    <Header />
+    <Header lang={lang} textos={textos} />
     <slot />
-    <Footer />
+    <Footer lang={lang} textos={textos} />
     <style is:global>
       :root {
         color-scheme: light dark;

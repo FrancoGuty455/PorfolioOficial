@@ -1,0 +1,37 @@
+{
+  "about": {
+    "p1": "Me llamo Franco Gutiérrez. Llevo más de <strong>3 años trabajando como desarrollador freelance</strong>, colaborando con empresas y clientes de distintas partes del mundo.",
+    "p2": "Estoy especializado en el desarrollo de <strong>aplicaciones web, móviles y de escritorio</strong>. Me gusta trabajar con tecnologías modernas y crear soluciones que realmente ayuden a las personas a resolver problemas concretos.",
+    "p3": "Algunos de mis proyectos más destacados incluyen <strong>el desarrollo de una plataforma de gestión médica usada en clínicas de Argentina</strong>, y una app de escritorio para control de stock utilizada por pequeños comercios.",
+    "p4": "Además, he participado activamente en comunidades técnicas y eventos de programación, incluyendo <strong>charlas en meetups y hackatones regionales</strong>. Creo firmemente en el poder de compartir conocimiento para crecer como industria."
+  },
+
+  "hero": {
+    "title": "Hola, soy Franco",
+    "description": "+3 años de experiencia. <strong>Desarrollador de Software</strong> de Argentina. Especializado en el desarrollo de aplicaciones únicas.",
+    "badge": "Disponible para trabajar",
+    "contact": "Contáctame",
+    "linkedin": "LinkedIn"
+  },
+  "experience": [
+    {
+      "date": "Desde 2022",
+      "title": "Desarrollador Freelance",
+      "company": "Autónomo",
+      "description": "Desarrollo de soluciones a medida para pymes y emprendedores. He creado sistemas de ventas, aplicaciones web personalizadas, sitios corporativos y apps móviles multiplataforma. Enfocado en rendimiento, usabilidad y escalabilidad.",
+      "link": ""
+    }
+  ],
+
+
+  "projects": [
+    {
+      "title": "Sitio oficial de Some Social Meeting",
+      "description": "Landing page en portugués desarrollada con React y Next.js para la empresa Some Social Meeting. Diseño responsive, tiempos de carga optimizados y SEO básico implementado."
+    },
+    {
+      "title": "Sistema de ventas con Python y Tkinter",
+      "description": "Aplicación de escritorio para gestionar ventas, stock e informes en negocios pequeños. Interfaz desarrollada con Tkinter, persistencia de datos con SQLite. Proyecto funcional y adaptable a distintos rubros."
+    }
+  ]
+}

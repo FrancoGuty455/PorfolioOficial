@@ -1,0 +1,38 @@
+{
+  "about": {
+    "p1": "My name is Franco Gutiérrez. I have been working as a <strong>freelance developer for over 3 years</strong>, collaborating with companies and clients from around the world.",
+    "p2": "I specialize in developing <strong>web, mobile, and desktop applications</strong>. I enjoy working with modern technologies and creating solutions that truly help people solve real problems.",
+    "p3": "Some of my most notable projects include <strong>developing a medical management platform used in clinics in Argentina</strong>, and a desktop stock control app used by small businesses.",
+    "p4": "I have also actively participated in tech communities and programming events, including <strong>talks at meetups and regional hackathons</strong>. I firmly believe in the power of knowledge sharing to grow as an industry."
+  },
+
+  "hero": {
+    "title": "Hi, I'm Franco",
+    "description": "+3 years of experience. <strong>Software Developer</strong> from Argentina. Specialized in building unique applications.",
+    "badge": "Available for work",
+    "contact": "Contact me",
+    "linkedin": "LinkedIn"
+  },
+  "experience": [
+    {
+      "date": "Since 2022",
+      "title": "Freelance Developer",
+      "company": "Self-employed",
+      "description": "Custom solutions for small businesses and entrepreneurs. Built sales systems, custom web apps, corporate sites, and cross-platform mobile apps. Focused on performance, usability, and scalability.",
+      "link": ""
+    }
+  ]
+,
+  "projects": [
+    {
+      "title": "Official Website of Some Social Meeting",
+      "description": "Portuguese landing page developed with React and Next.js for the company Some Social Meeting. Responsive design, optimized load times, and basic SEO implemented."
+    },
+    {
+      "title": "Sales System with Python and Tkinter",
+      "description": "Desktop app to manage sales, inventory, and reports for small businesses. Interface built with Tkinter, data persisted with SQLite. Functional project adaptable to various industries."
+    }
+  ]
+}
+
+

@@ -1,0 +1,66 @@
+---
+const currentPath = Astro.url.pathname;
+const languages = ["es", "en", "pt"];
+
+const currentLang = currentPath.split("/")[1];
+const restOfPath = currentPath.split("/").slice(2).join("/") || "";
+
+function buildLangPath(lang: string): string {
+  return `/${lang}${restOfPath ? "/" + restOfPath : ""}`;
+}
+---
+
+<div class="relative ml-2">
+  <button
+    id="lang-toggle-btn"
+    class="appearance-none border-none flex items-center hover:scale-105 transition"
+  >
+    <span class="uppercase font-semibold text-sm">{currentLang || 'es'}</span>
+  </button>
+
+  <div
+    id="lang-menu"
+    class="absolute hidden top-8 right-0 text-sm p-1 min-w-[6rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-lg backdrop-blur-md z-50"
+  >
+    <ul>
+      {
+        languages.map((lang) => (
+          <li>
+            <a
+              href={buildLangPath(lang)}
+              class="block px-3 py-1 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-sm text-sm uppercase"
+            >
+              {lang}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+<script is:inline>
+  function setupLangMenu() {
+    const btn = document.getElementById("lang-toggle-btn");
+    const menu = document.getElementById("lang-menu");
+
+    if (!btn || !menu) return;
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      menu.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", () => {
+      menu.classList.add("hidden");
+    });
+  }
+
+  // Ejecutar al cargar
+  setupLangMenu();
+
+  // Volver a ejecutar tras navegación SPA
+  document.addEventListener("astro:after-swap", () => {
+    setupLangMenu();
+  });
+</script>
+

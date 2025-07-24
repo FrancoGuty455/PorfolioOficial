@@ -1,10 +1,28 @@
-import { defineConfig } from 'astro/config'
-import tailwind from "@astrojs/tailwind"
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind'; // si lo usás
+import robotsTxt from 'astro-robots-txt'; // si lo usás
 
-import robotsTxt from "astro-robots-txt"
-
-// https://astro.build/config
 export default defineConfig({
+
+  trailingSlash: 'ignore',
   integrations: [tailwind(), robotsTxt()],
-  site: 'https://porfolio.dev/'
-})
+  vite: {
+    plugins: [
+      {
+        name: 'redirect-to-default-lang',
+        enforce: 'pre',
+        configureServer(server) {
+          server.middlewares.use((req, res, next) => {
+            if (req.url === '/') {
+              res.statusCode = 302;
+              res.setHeader('Location', '/en/');
+              res.end();
+            } else {
+              next();
+            }
+          });
+        },
+      },
+    ],
+  },
+});

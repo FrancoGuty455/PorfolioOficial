@@ -1,22 +1,23 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
+import es from "../i18n/es.json"
+import en from "../i18n/en.json"
+import pt from "../i18n/pt.json"
 
-const EXPERIENCE = [
-  {
-    date: "Desde 2022",
-    title: "Desarrollador Freelance",
-    company: "Autónomo",
-    description:
-      "Desarrollo de soluciones a medida para pymes y emprendedores. He creado sistemas de ventas, aplicaciones web personalizadas, sitios corporativos y apps móviles multiplataforma. Enfocado en rendimiento, usabilidad y escalabilidad.",
-    link: "",
-  },
-]
+const langs = { es, en, pt } as const;
+type Lang = keyof typeof langs;
+
+const langParam = Astro.url.pathname.split('/')[1];
+const lang: Lang = (['es', 'en', 'pt'].includes(langParam) ? langParam : 'es') as Lang;
+
+const t = langs[lang];
+const EXPERIENCE = t.experience;
 ---
 
 <ol class="relative mt-16">
   {
     EXPERIENCE.map((experience) => (
-      <li class="">
+      <li>
         <ExperienceItem {...experience} />
       </li>
     ))
